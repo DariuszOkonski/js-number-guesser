@@ -1,4 +1,89 @@
-h1 {
-  color: green;
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0044cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99bbff;
+  width: 100%;
+  min-height: 90%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #001a4d;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container h3 {
+  font-weight: 300;
+}
+
+.container h3 span {
+  font-weight: 700;
+}
+
+.container__form {
+  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container__form input {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

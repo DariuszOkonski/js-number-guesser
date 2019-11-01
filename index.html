@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Number Guesser</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Number Guesser</title>
-</head>
+  <body>
+    <section class="container">
+      <h1>Number Guesser</h1>
+      <h3>Guess a number between <span>1</span> and <span>5</span></h3>
 
-<body>
-  <h1>Number Guesser</h1>
+      <form class="container__form">
+        <input type="text" />
+        <input type="submit" value="submit" />
+      </form>
 
-  <script src="js/main.js" type="module"></script>
-</body>
+      <div class="message">
+        Please enter a number between 1 and 9
+      </div>
+    </section>
 
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>

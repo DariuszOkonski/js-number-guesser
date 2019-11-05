@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Number Guesser</title>
-  </head>
 
-  <body>
-    <section class="container">
-      <h1>Number Guesser</h1>
-      <div class="score">
-        <h3>Guess a number between <span>4</span> and <span>10</span></h3>
-        <h3>Number of attempts remaining: <span>4</span></h3>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Number Guesser</title>
+</head>
 
-      <form class="container__form">
-        <input type="number" placeholder="Enter you guess..." />
-        <input type="submit" value="submit" />
-      </form>
+<body>
+  <section class="container">
+    <h1>Number Guesser</h1>
+    <div class="score">
+      <h3>Guess a number between
+        <span class="min-number"></span>4</span> and
+        <span class="max-number">10</span></h3>
+      <h3>Number of attempts remaining: <span class="attemps">4</span></h3>
+    </div>
 
-      <div class="container__message">
-        Please enter a number between 1 and 9
-      </div>
-    </section>
+    <form class="container__form">
+      <input class="container__input" type="number" placeholder="Enter you guess..." />
+      <input class="container__submit" type="submit" value="submit" />
+    </form>
 
-    <script src="js/main.js" type="module"></script>
-  </body>
+    <div class="container__message">
+      Please enter a number between 1 and 9
+    </div>
+  </section>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+
 </html>

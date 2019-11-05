@@ -15,7 +15,9 @@ domElements.form.addEventListener('submit', (e) => {
   if (!numberGuesser.gameOver) {
     const guessNumber = parseInt(domElements.formInput.value);
 
-    if (numberGuesser.attemps === 0) {
+    if (numberGuesser.attemps === 1) {
+      domElements.attemps.textContent = 0;
+      numberGuesser.attemps = 0;
       displayMessage('red', 'You do not have more attemps')
       numberGuesser.gameOver = true;
       displayButtonFuncionality('Play again');

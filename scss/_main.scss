@@ -58,6 +58,8 @@ body {
   }
 
   &__message {
+    visibility: hidden;
+    background-color: white;
     border: 1px solid black;
     padding: 1rem .5rem;
     border-radius: 5px;
